@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Variables*/
+$color1: #4e89ae;
+$color2: #43658b;
+$color3: #ed6663;
+$color4: #ffa372;
+$color5: #8ccff7;
+
+/*Mixin property*/
+@mixin Rectangles($bg-color) {
+    background-color: $bg-color;
+    height: 40px;
+    width:100%;
+}
+
+/*adding color*/
+.Rec1{
+    @include Rectangles($color1)
+}
+
+/*Second rectangle*/
+.Rec2{
+    @include Rectangles($color2)
+}
+
+/*Third rectangle*/
+.Rec3{
+    @include Rectangles($color3)
+}
+
+/*Fourth rectangle*/
+.Rec4{
+    @include Rectangles($color4)
+}
+
+/*Circle styling*/
+.C1{
+    background-color: $color1;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*Second circle*/
+.C2{
+    @extend .C1;
+    background-color: $color2;
+    height: 80px;
+    width: 80px;
+}
+
+/*Third circle*/
+.C3{
+    @extend .C1;
+    background-color: $color3;
+    height: 90px;
+    width: 90px;
+}
+
+/*Fourth circle*/
+.C4{
+    @extend .C1;
+    background-color: $color4;
+    height: 100px;
+    width: 100px;
+}
+
+/*aadding 5th*/
+header, footer{
+    background-color: $color5;
+}
+
+/*Footer margin and height*/
+footer{
+    height: 50px;
+    margin-top: 60px;
+}
+
+/*Body color.*/
+body{
+    background-color:rgb(220, 245, 255);
+    text-align: center;
+}
+
+/*Hover color*/
+.Rec1:hover, .Rec2:hover, .Rec3:hover, .Rec4:hover, 
+.C1:hover, .C2:hover, .C3:hover, .C4:hover{
+    background-color: #444;
+}
+
+/*Padding */
+.rectangle{
+padding-top: 50px;
+}
+
+/*Padding */
+.circle{
+    margin-top: 55px;
+}
+
+/*Media query, when the screen is 480px to 619px.*/
+@media screen and (min-width:480px) and (max-width:619px) {
+    header{ /*Changing the height of the header.*/
+        height: 200px;
+    }
+
+    .circle{ /*Displaying the circles in a column and center align using flex.*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .C1{ /*Adding a margin to the circles.*/
+        margin-bottom: 8px;
+    }
+}
+
+/*Media query, when the screen is 620px to 1023px.*/
+@media screen and (min-width:620px) and (max-width:1023px){
+    header{ /*Changing the height of the header.*/
+        height: 300px;
+    }
+
+    .circle{ /*Displaying the circles in a column and center align using flex.*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .C1{ /*Adding a margin to the circles.*/
+        margin-bottom: 8px;
+    }
+}
+
+/*Media query, when the screen is 1024px or above.*/
+@media screen and (min-width:1024px){
+    header{ /*Changing the height of the header.*/
+        height: 400px;
+    }
+    .C1{ /*Display circles inline and centered.*/
+        display: inline-block; 
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+/*Media query, when the screen is below 479px.*/
+@media screen and (max-width:479px){
+    header{ /*Changing the height of the header.*/
+        height: 200px;
+    }
+
+    .circle{ /*Displaying the circles in a column and center align using flex.*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .C1{ /*Adding a margin to the circles.*/
+        margin-bottom: 8px;
+    }
+}
