@@ -1,0 +1,140 @@
+body {
+    font-family: Helvetica;
+}
+
+.header {
+    background-color: #1E90FF;
+    height: 87px;
+    width: 100%;
+    display: flex;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 31px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.search {
+    border: solid 2px #767676;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 310px;
+    height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    color: #767676;
+}
+
+.searchtext {
+    padding-left: 12px ;
+    opacity: 0.6;
+}
+
+.list {
+    width: 15%;
+    display: flex;
+    align-items: center ;
+    color: white;
+    font-size: 16px;
+}
+
+
+.p1, .p2, .p3 {
+    margin-right: 21px;
+}
+
+
+
+
+
+.main {
+    background-color: #FFFFFF;
+}
+
+.content {
+    padding-top: 25px;
+    max-width: 70%;
+    height: 200%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    display: flex;
+}   
+
+
+
+.avengers {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 5px 5px grey;
+    width: 712px;
+    float: left;
+}
+
+.avgimg {
+    margin: 1px;
+}
+
+.text {
+    padding: 15px;
+    padding-top: 0;
+}
+
+
+
+
+
+.lone {
+    box-shadow: 1px 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    height: 685px;
+    width: 243px;
+    margin-left: 10px;
+}
+
+.loneimg {
+    height: 301px;
+    margin: 16px;
+
+}
+
+
+
+
+.rage {
+    box-shadow: 1px 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    height: 685px;
+    width: 243px;
+    margin-left: 10px;
+}
+
+.rageimg {
+    height: 301px;
+    margin: 16px;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.button {
+    float: right;
+    background-color: #1B98FF;
+    color: white;
+    padding: 10px;
+    margin: 26px;
+    border-radius: 5px 5px 5px 5px;
+    width: 93px;
+    text-align: center;
+}
